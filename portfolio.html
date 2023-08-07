@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Mobile menu -->
+    <div class="js-menu-container">
+      <button class="menu-toggle js-close-menu">
+        <svg class="close-menu">
+          <use href="./images/icons.svg#icon-modal-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-backdrop">
+        <nav class="mobile-navigation">
+          <ul class="mobile-list">
+            <li>
+              <a href="index.html">Studio</a>
+            </li>
+            <li>
+              <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li><a href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <ul class="mobile-contacts-list">
+          <li class="mobile-contacts">
+            <a
+              href="mailto:info@devstudio.com"
+              href="mailto:info@devstudio.com"
+              aria-label="Mail"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="mobile-contacts">
+            <a href="tel:+12127724150" aria-label="Phone number"
+              >+1 212-772-4150</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-social-media-group">
+          <li class="mobile-social-media">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="Instagram"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-social-media">
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="Twitter"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-social-media">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="Facebook"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-social-media">
+            <a
+              href="https://www.linkedIn.com"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="Linkedin"
+              >Linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Header -->
+    <header class="header small-container">
+      <div class="mobile-logo">
+        <a href="index.html" class="logo"
+          ><span class="logo-color">Web</span>Studio</a
+        >
+        <button class="menu-button js-open-menu is-open">
+          <svg class="menu">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="header-container">
+        <a href="index.html" class="logo"
+          ><span class="logo-color">Web</span>Studio</a
+        >
+        <nav class="navigation">
+          <ul class="header-links">
+            <li>
+              <a href="index.html" class="link studio">Studio</a>
+            </li>
+            <li>
+              <a href="portfolio.html" class="link portfolio portfolio-page"
+                >Portfolio</a
+              >
+            </li>
+            <li><a href="" class="link contacts-page">Contacts</a></li>
+          </ul>
+        </nav>
+        <ul class="header-contacts">
+          <li class="mail-header-group">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contacts header-contacts-mail"
+              ><span
+                href="mailto:info@devstudio.com"
+                class="header-icon header-contacts-mail"
+                aria-label="Mail"
+                ><svg class="mail">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg> </span
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="phone-header-group">
+            <a href="tel:+12127724150" class="contacts header-contacts-phone"
+              ><span
+                href="tel:+12127724150"
+                class="header-icon header-contacts-phone"
+                aria-label="Phone number"
+                ><svg class="phone">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg> </span
+              >+1 212-772-4150</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Main Section -->
+    <main class="section small-container">
+      <div>
+        <ul class="button-list">
+          <li class="button-all">
+            <button type="button" class="button button-all">All</button>
+          </li>
+          <li class="button-web-sites">
+            <button type="button" class="button button-web-sites">
+              Web-sites
+            </button>
+          </li>
+          <li class="button-apps">
+            <button type="button" class="button button-apps">Apps</button>
+          </li>
+          <li class="button-design">
+            <button type="button" class="button button-design">Design</button>
+          </li>
+          <li class="button-marketing">
+            <button type="button" class="button button-marketing">
+              Marketing
+            </button>
+          </li>
+        </ul>
+      </div>
+      <!-- All Projects -->
+      <div class="projects-list">
+        <ul class="project">
+          <li class="project-animation">
+            <div class="project-animation">
+              <picture>
+                <source
+                  media="(min-width:1170px)"
+                  srcset="
+                    images/technoduck-d.png,
+                    images/technoduck-d-2x.png
+                  " />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    images/technoduck-t.png,
+                    images/technoduck-t-2x.png
+                  " />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    images/technoduck-m.png,
+                    images/technoduck-m-2x.png
+                  " />
+                <img
+                  class="project-image"
+                  width="370"
+                  height="294"
+                  src="images/technoduck-d.png"
+                  alt="Website Picture"
+              /></picture>
+              <div class="overlay">
+                <p class="overlay-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nobis facere quod veritatis alias maxime totam odit quidem in, dolorem, quo explicabo magni animi nisi, saepe fugiat officia quisquam quaerat?
+                </p>
+              </div>
+            </div>
+            <h3 class="project-title">Technoduck</h3>
+            <p class="project-type">Web-site</p>
+          </li>
+        </ul>
+        <ul class="project">
+          <li class="project-animation">
+            <div class="project-animation">
+              <picture>
+                <source
+                  media="(min-width:1170px)"
+                  srcset="images/poster-d.png, images/poster-d-2x.png" />
+                <source
+                  media="(min-width:768px)"
+                  srcset="images/poster-t.png, images/poster-t-2x.png" />
+                <source
+                  media="(min-width:480px)"
+                  srcset="images/poster-m.png, images/poster-m-2x.png" />
+                <img
+                  width="370"
+                  height="294"
+                  src="images/poster-d.png"
+                  alt="Poster of 2 basketball players"
+              /></picture>
+              <div class="overlay">
+                <p class="overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nobis facere quod veritatis alias maxime totam odit quidem in, dolorem, quo explicabo magni animi nisi, saepe fugiat officia quisquam quaerat?</p>
+              </div>
+            </div>
+            <h3 class="project-title">Poster New Orlean vs Golden Star</h3>
+            <p class="project-type">Design</p>
+          </li>
+        </ul>
+        <ul class="project">
+          <li class="project-animation">
+            <div class="project-animation">
+              <picture>
+                <source
+                  media="(min-width:1170px)"
+                  srcset="images/seafood-d.png, images/seafood-d-2x.png" />
+                <source
+                  media="(min-width:768px)"
+                  srcset="images/seafood-t.png, images/seafood-t-2x.png" />
+                <source
+                  media="(min-width:480px)"
+                  srcset="images/seafood-m.png, images/seafood-m-2x.png" />
+                <img
+                  width="370"
+                  height="294"
+                  src="images/seafood-d.png"
+                  alt="Restaurant Logo"
+              /></picture>
+              <div class="overlay">
+                <p class="overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nobis facere quod veritatis alias maxime totam odit quidem in, dolorem, quo explicabo magni animi nisi, saepe fugiat officia quisquam quaerat?</p>
+              </div>
+            </div>
+            <h3 class="project-title">Seafood Restaurant</h3>
+            <p class="project-type">Apps</p>
+          </li>
+        </ul>
+        <ul class="project">
+          <li class="project-animation">
+            <div class="project-animation">
+              <picture>
+                <source
+                  media="(min-width:1170px)"
+                  srcset="
+                    images/project-prime-d.png,
+                    images/project-prime-d-2x.png
+                  " />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    images/project-prime-t.png,
+                    images/project-prime-t-2x.png
+                  " />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    images/project-prime-m.png,
+                    images/project-prime-m-2x.png
+                  " />
+                <img
+                  width="370"
+                  height="294"
+                  src="images/project-prime-d.png"
+                  alt="Black Headphones"
+              /></picture>
+              <div class="overlay">
+                <p class="overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nobis facere quod veritatis alias maxime totam odit quidem in, dolorem, quo explicabo magni animi nisi, saepe fugiat officia quisquam quaerat?</p>
+              </div>
+            </div>
+            <h3 class="project-title">Project Prime</h3>
+            <p class="project-type">Marketing</p>
+          </li>
+        </ul>
+        <ul class="project">
+          <li class="project-animation">
+            <div class="project-animation">
+              <picture>
+                <source
+                  media="(min-width:1170px)"
+                  srcset="
+                    images/project-boxes-d.png,
+                    images/project-boxes-d-2x.png
+                  " />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    images/project-boxes-t.png,
+                    images/project-boxes-t-2x.png
+                  " />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    images/project-boxes-m.png,
+                    images/project-boxes-m-2x.png
+                  " />
+                <img
+                  width="370"
+                  height="294"
+                  src="images/project-boxes-d.png"
+                  alt="2 Boxes"
+              /></picture>
+              <div class="overlay">
+                <p class="overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nobis facere quod veritatis alias maxime totam odit quidem in, dolorem, quo explicabo magni animi nisi, saepe fugiat officia quisquam quaerat?</p>
+              </div>
+            </div>
+            <h3 class="project-title">Project Boxes</h3>
+            <p class="project-type">Apps</p>
+          </li>
+        </ul>
+        <ul class="project">
+          <li class="project-animation">
+            <div class="project-animation">
+              <picture>
+                <source
+                  media="(min-width:1170px)"
+                  srcset="
+                    images/inspiration-d.png,
+                    images/inspiration-d-2x.png
+                  " />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    images/inspiration-t.png,
+                    images/inspiration-t-2x.png
+                  " />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    images/inspiration-m.png,
+                    images/inspiration-m-2x.png
+                  " />
+                <img
+                  width="370"
+                  height="294"
+                  src="images/inspiration-d.png"
+                  alt="Website Homescreen"
+              /></picture>
+              <div class="overlay">
+                <p class="overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nobis facere quod veritatis alias maxime totam odit quidem in, dolorem, quo explicabo magni animi nisi, saepe fugiat officia quisquam quaerat?</p>
+              </div>
+            </div>
+            <h3 class="project-title">Inspiration has no Borders</h3>
+            <p class="project-type">Web-site</p>
+          </li>
+        </ul>
+        <ul class="project">
+          <li class="project-animation">
+            <div class="project-animation">
+              <picture>
+                <source
+                  media="(min-width:1170px)"
+                  srcset="
+                    images/limited-edition-d.png,
+                    images/limited-edition-d-2x.png
+                  " />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    images/limited-edition-t.png,
+                    images/limited-edition-t-2x.png
+                  " />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    images/limited-edition-m.png,
+                    images/limited-edition-m-2x.png
+                  " />
+                <img
+                  width="370"
+                  height="294"
+                  src="images/limited-edition-d.png"
+                  alt="Open Book"
+              /></picture>
+              <div class="overlay">
+                <p class="overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nobis facere quod veritatis alias maxime totam odit quidem in, dolorem, quo explicabo magni animi nisi, saepe fugiat officia quisquam quaerat?</p>
+              </div>
+            </div>
+            <h3 class="project-title">Limited Edition</h3>
+            <p class="project-type">Design</p>
+          </li>
+        </ul>
+        <ul class="project">
+          <li class="project-animation">
+            <div class="project-animation">
+              <picture>
+                <source
+                  media="(min-width:1170px)"
+                  srcset="
+                    images/project-lab-d.png,
+                    images/project-lab-d-2x.png
+                  " />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    images/project-lab-t.png,
+                    images/project-lab-t-2x.png
+                  " />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    images/project-lab-m.png,
+                    images/project-lab-m-2x.png
+                  " />
+                <img
+                  width="370"
+                  height="294"
+                  src="images/project-lab-d.png"
+                  alt="white tag"
+              /></picture>
+              <div class="overlay">
+                <p class="overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nobis facere quod veritatis alias maxime totam odit quidem in, dolorem, quo explicabo magni animi nisi, saepe fugiat officia quisquam quaerat?</p>
+              </div>
+            </div>
+            <h3 class="project-title">Project LAB</h3>
+            <p class="project-type">Marketing</p>
+          </li>
+        </ul>
+        <ul class="project">
+          <li class="project-animation">
+            <div class="project-animation">
+              <picture>
+                <source
+                  media="(min-width:1170px)"
+                  srcset="
+                    images/growing-business-d.png,
+                    images/growing-business-d-2x.png
+                  " />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    images/growing-business-t.png,
+                    images/growing-business-t-2x.png
+                  " />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    images/growing-business-m.png,
+                    images/growing-business-m-2x.png
+                  " />
+                <img
+                  width="370"
+                  height="294"
+                  src="images/growing-business-d.png"
+                  alt="Typing on Laptop keyboard"
+              /></picture>
+              <div class="overlay">
+                <p class="overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nobis facere quod veritatis alias maxime totam odit quidem in, dolorem, quo explicabo magni animi nisi, saepe fugiat officia quisquam quaerat?</p>
+              </div>
+            </div>
+            <h3 class="project-title">Growing Business</h3>
+            <p class="project-type">Apps</p>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer container">
+      <div class="small-container footer-container">
+        <div class="footer-adress-icon">
+          <div class="logo-adress">
+            <a href="index.html" class="logo footer-logo"
+              ><span class="logo-color">Web</span
+              ><span class="logo-second-color">Studio</span></a
+            >
+            <!-- Adress -->
+            <address>
+              <ul class="footer-contacts">
+                <li class="footer-location footer-adress">
+                  <a
+                    href="https://www.google.com/maps/place/695+Park+Ave,+New+York,+NY+10065,+USA/@40.7688994,-73.9676005,17z/data=!3m1!4b1!4m6!3m5!1s0x89c258ebe8836e8f:0xa007c44e7c4aa0eb!8m2!3d40.7688994!4d-73.9650256!16s%2Fg%2F11c250btd8?entry=ttu"
+                    class="adress location"
+                    >695 Park Ave, NY 10065, USA</a
+                  >
+                </li>
+                <li class="footer-adress">
+                  <a href="mailto:info@devstudio.com" class="adress"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-adress">
+                  <a href="tel:+12127724150" class="adress">+1 212-772-4150</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-icon-list">
+            <h3 class="footer-icon-title">Find us on</h3>
+            <div class="footer-icon-container">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                class="footer-icon"
+                aria-label="Instagram"
+              >
+                <svg>
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                class="footer-icon"
+                aria-label="Twitter"
+              >
+                <svg>
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                class="footer-icon"
+                aria-label="Facebook"
+              >
+                <svg>
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                class="footer-icon"
+                aria-label="Linkedin"
+              >
+                <svg>
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <form
+          name="subscribe-form"
+          autocomplete="on"
+          novalidate
+          class="subscribe-form"
+        >
+          <p class="form-info">Subscribe to the newsletter</p>
+          <div class="input-button-container">
+            <label for="user_email" class="subscribe-input"
+              ><input
+                type="email"
+                name="email"
+                id="subscribe-user-email"
+                placeholder="E-mail"
+            /></label>
+            <button type="submit" class="subscribe-button">
+              <span>Subscribe</span>
+              <svg class="icon-send">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
